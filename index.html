@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#faf7f2">
+    <meta name="description" content="PALA AI: Kasketli, bıyıklı, fırlama Elbistanlı yapay zekası. Gardaşça sohbet, fıkra, şiir, laf sokma!">
+    <title>PALA Aİ-GÖZÜM ÜSTÜNDE</title>
+    <!-- Tek dosya logomuz SVG data URI -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' rx='80' fill='%23faf7f2' /%3E%3Cpath d='M150,280 Q200,320 250,280 L280,350 L120,350 Z' fill='%23e5c3a3'/%3E%3Cpath d='M130,290 C130,290 200,360 270,290 L290,350 L110,350 Z' fill='%231a1a1a'/%3E%3Cellipse cx='200' cy='180' rx='100' ry='115' fill='%23fce2c4' /%3E%3Cpath d='M102,170 C85,160 85,190 102,185' fill='%23fce2c4' stroke='%23d5b090' stroke-width='2'/%3E%3Cpath d='M298,170 C315,160 315,190 298,185' fill='%23fce2c4' stroke='%23d5b090' stroke-width='2'/%3E%3Cpath d='M90,110 C90,30 310,30 310,110 Z' fill='%232c1e16'/%3E%3Cpath d='M60,115 Q200,150 340,115 Q340,90 200,90 Q60,90 60,115 Z' fill='%231c130e'/%3E%3Cpath d='M80,110 Q200,140 320,110 Q200,95 80,110 Z' fill='%233a2a1f'/%3E%3Cellipse cx='200' cy='65' rx='50' ry='8' fill='%234a3628'/%3E%3Ccircle cx='130' cy='190' r='20' fill='%23ff7b6b' opacity='0.4'/%3E%3Ccircle cx='270' cy='190' r='20' fill='%23ff7b6b' opacity='0.4'/%3E%3Ccircle cx='150' cy='155' r='22' fill='%23ffffff' stroke='%232c1e16' stroke-width='3'/%3E%3Ccircle cx='150' cy='155' r='11' fill='%23d32f2f'/%3E%3Ccircle cx='150' cy='155' r='5' fill='%231a0805'/%3E%3Ccircle cx='146' cy='151' r='3' fill='white'/%3E%3Ccircle cx='250' cy='155' r='22' fill='%23ffffff' stroke='%232c1e16' stroke-width='3'/%3E%3Ccircle cx='250' cy='155' r='11' fill='%23d32f2f'/%3E%3Ccircle cx='250' cy='155' r='5' fill='%231a0805'/%3E%3Ccircle cx='246' cy='151' r='3' fill='white'/%3E%3Cpath d='M120,135 Q145,120 170,130' stroke='%232c1e16' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3Cpath d='M280,135 Q255,120 230,130' stroke='%232c1e16' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3Cpath d='M200,215 C170,215 130,200 90,240 C70,260 60,280 80,285 C100,290 130,270 160,250 C180,235 190,225 200,225 Z' fill='%232c1e16'/%3E%3Cpath d='M200,215 C230,215 270,200 310,240 C330,260 340,280 320,285 C300,290 270,270 240,250 C220,235 210,225 200,225 Z' fill='%232c1e16'/%3E%3Cpath d='M190,220 Q200,230 210,220 Q200,240 190,220 Z' fill='%232c1e16'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' rx='80' fill='%23faf7f2' /%3E%3Cpath d='M150,280 Q200,320 250,280 L280,350 L120,350 Z' fill='%23e5c3a3'/%3E%3Cpath d='M130,290 C130,290 200,360 270,290 L290,350 L110,350 Z' fill='%231a1a1a'/%3E%3Cellipse cx='200' cy='180' rx='100' ry='115' fill='%23fce2c4' /%3E%3Cpath d='M102,170 C85,160 85,190 102,185' fill='%23fce2c4' stroke='%23d5b090' stroke-width='2'/%3E%3Cpath d='M298,170 C315,160 315,190 298,185' fill='%23fce2c4' stroke='%23d5b090' stroke-width='2'/%3E%3Cpath d='M90,110 C90,30 310,30 310,110 Z' fill='%232c1e16'/%3E%3Cpath d='M60,115 Q200,150 340,115 Q340,90 200,90 Q60,90 60,115 Z' fill='%231c130e'/%3E%3Cpath d='M80,110 Q200,140 320,110 Q200,95 80,110 Z' fill='%233a2a1f'/%3E%3Cellipse cx='200' cy='65' rx='50' ry='8' fill='%234a3628'/%3E%3Ccircle cx='130' cy='190' r='20' fill='%23ff7b6b' opacity='0.4'/%3E%3Ccircle cx='270' cy='190' r='20' fill='%23ff7b6b' opacity='0.4'/%3E%3Ccircle cx='150' cy='155' r='22' fill='%23ffffff' stroke='%232c1e16' stroke-width='3'/%3E%3Ccircle cx='150' cy='155' r='11' fill='%23d32f2f'/%3E%3Ccircle cx='150' cy='155' r='5' fill='%231a0805'/%3E%3Ccircle cx='146' cy='151' r='3' fill='white'/%3E%3Ccircle cx='250' cy='155' r='22' fill='%23ffffff' stroke='%232c1e16' stroke-width='3'/%3E%3Ccircle cx='250' cy='155' r='11' fill='%23d32f2f'/%3E%3Ccircle cx='250' cy='155' r='5' fill='%231a0805'/%3E%3Ccircle cx='246' cy='151' r='3' fill='white'/%3E%3Cpath d='M120,135 Q145,120 170,130' stroke='%232c1e16' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3Cpath d='M280,135 Q255,120 230,130' stroke='%232c1e16' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3Cpath d='M200,215 C170,215 130,200 90,240 C70,260 60,280 80,285 C100,290 130,270 160,250 C180,235 190,225 200,225 Z' fill='%232c1e16'/%3E%3Cpath d='M200,215 C230,215 270,200 310,240 C330,260 340,280 320,285 C300,290 270,270 240,250 C220,235 210,225 200,225 Z' fill='%232c1e16'/%3E%3Cpath d='M190,220 Q200,230 210,220 Q200,240 190,220 Z' fill='%232c1e16'/%3E%3C/svg%3E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="PALA Aİ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #faf7f2;          /* Premium Light Background */
+            --surface: #ffffff;     /* Component Background */
+            --surface-2: #f2ede4;   /* Hover/Secondary Background */
+            --border: #e6dfd3;      
+            --border-light: #dcd3c6;
+
+            --red: #d32f2f;         /* Vibrant Red */
+            --red-hover: #e53935;
+            --red-glow: rgba(211, 47, 47, 0.2);
+            --red-soft: rgba(211, 47, 47, 0.08);
+            
+            --gold: #f57f17;        /* Rating/Mood Gold */
+            --gold-soft: rgba(245, 127, 23, 0.1);
+
+            --text: #212121;
+            --text-sec: #555555;
+            --text-mut: #888888;
+
+            --radius-sm: 12px;
+            --radius-md: 20px;
+            --radius-lg: 32px;
+            --radius-full: 100px;
+
+            --shadow-float: 0 10px 40px rgba(0,0,0,0.08);
+            --shadow-btn: 0 4px 14px var(--red-glow);
+        }
+
+        html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(229,57,53,0.03), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(255,202,40,0.02), transparent 25%);
+            color: var(--text);
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 16px 160px; /* Space for the fixed bottom bar */
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body > * { position: relative; z-index: 1; }
+
+        /* ══════════════════════════════
+           SETTINGS MODAL
+        ══════════════════════════════ */
+        #settings-shim {
+            display: none; position: fixed; inset: 0;
+            background: rgba(250,247,242,0.85); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+            z-index: 9999; justify-content: center; align-items: center; padding: 16px;
+            animation: fadeIn 0.3s ease;
+        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        
+        .modal {
+            background: var(--surface); padding: 36px 32px;
+            border-radius: var(--radius-lg); border: 1px solid var(--border);
+            width: 100%; max-width: 440px;
+            box-shadow: var(--shadow-float);
+            animation: slideUp 0.4s cubic-bezier(0.16,1,0.3,1);
+        }
+        @keyframes slideUp { from { transform: translateY(24px) scale(0.96); opacity: 0; } to { transform: translateY(0) scale(1); opacity: 1; } }
+        
+        .modal h2 { text-align: center; font-size: 32px; font-weight: 900; margin-bottom: 6px; }
+        .modal h2 span { color: var(--red); }
+        .modal p.desc { text-align: center; color: var(--text-sec); font-size: 15px; margin-bottom: 32px; }
+        
+        .input-group { margin-bottom: 24px; }
+        .input-group label { display: block; font-size: 13px; font-weight: 700; color: var(--text-sec); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .input-group input {
+            width: 100%; padding: 16px 20px;
+            background: rgba(0,0,0,0.03); border: 2px solid var(--border);
+            border-radius: var(--radius-full); font-size: 16px; color: var(--text);
+            outline: none; font-family: inherit; transition: all 0.3s;
+        }
+        .input-group input:focus { border-color: var(--red); background: var(--surface); box-shadow: 0 0 0 4px var(--red-soft); }
+        
+        .btn-primary {
+            background: var(--red); color: white; border: none;
+            padding: 16px; border-radius: var(--radius-full);
+            font-size: 16px; font-weight: 800; width: 100%;
+            cursor: pointer; font-family: inherit; transition: all 0.3s;
+            box-shadow: var(--shadow-btn);
+        }
+        .btn-primary:hover { background: var(--red-hover); transform: translateY(-2px); box-shadow: 0 6px 20px var(--red-glow); }
+        .btn-primary:active { transform: translateY(1px); }
+        
+        .btn-cancel {
+            background: transparent; color: var(--text-mut); border: 1px solid var(--border);
+            padding: 14px; border-radius: var(--radius-full);
+            font-size: 14px; font-weight: 600; width: 100%;
+            cursor: pointer; font-family: inherit; transition: all 0.3s;
+            margin-top: 12px;
+        }
+        .btn-cancel:hover { background: rgba(255,255,255,0.05); color: var(--text); }
+        
+        .modal-footer { text-align: center; margin-top: 24px; font-size: 13px; color: var(--text-mut); }
+        .modal-footer a { color: var(--red); text-decoration: none; font-weight: 600; }
+        .modal-footer a:hover { text-decoration: underline; }
+
+        /* ══════════════════════════════
+           HEADER & BRAND
+        ══════════════════════════════ */
+        .header { width: 100%; max-width: 800px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+        .brand { font-size: 34px; font-weight: 900; letter-spacing: -1px; }
+        .brand span { color: var(--red); }
+        
+        .actions { display: flex; gap: 8px; }
+        .icon-btn {
+            background: var(--surface); border: 1px solid var(--border);
+            width: 44px; height: 44px; border-radius: 50%;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 18px; cursor: pointer; transition: all 0.3s;
+            color: var(--text-sec);
+        }
+        .icon-btn:hover { background: var(--surface-2); border-color: var(--border-light); color: var(--text); transform: scale(1.05); }
+
+        .tagline { width: 100%; max-width: 800px; color: var(--text-mut); font-size: 12px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 24px; text-align: center; }
+
+        /* ══════════════════════════════
+           PRO CHARACTER SVG
+        ══════════════════════════════ */
+        .stage {
+            background: linear-gradient(180deg, var(--surface) 0%, rgba(242,237,228,0.6) 100%);
+            border: 1px solid var(--border); border-radius: var(--radius-lg);
+            width: 100%; max-width: 800px; padding: 40px 20px 24px;
+            display: flex; flex-direction: column; align-items: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.06); margin-bottom: 20px;
+            z-index: 10; position: relative;
+        }
+
+        .avatar-container { position: relative; width: 320px; height: 280px; margin-bottom: 24px; perspective: 1000px; }
+        .avatar-svg { width: 100%; height: 100%; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5)); transform-style: preserve-3d; animation: floatAvatar 4s ease-in-out infinite; }
+        @keyframes floatAvatar { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+        
+        /* Premium Character Details */
+        .skin { fill: #fce2c4; }
+        .skin-shade { fill: #e5c3a3; }
+        .hair-color { fill: #2c1e16; }
+        .kasket-rim { fill: #1c130e; }
+        .eye-white { fill: #ffffff; }
+        .iris { fill: var(--red); transition: transform 0.08s ease-out; }
+        .pupil-core { fill: #1a0805; transition: transform 0.08s ease-out; }
+        .eye-lid { fill: #fce2c4; transition: opacity 0.1s; }
+        .blinking .eye-lid { opacity: 1; }
+        
+        /* 3D Kasket Effect Hover */
+        .avatar-svg:hover .kasket { transform: rotate(-2deg) translateY(-2px); transform-origin: 50% 30%; }
+        .kasket { transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+        /* Mustache animation */
+        .mustache { filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); transform-origin: 50% 60%; transition: transform 0.3s; }
+        .mustache.talking { animation: talk 0.2s infinite alternate; }
+        @keyframes talk { 0% { transform: scaleY(1); } 100% { transform: scaleY(1.1) translateY(2px); } }
+        
+        .mood-chip {
+            background: var(--surface-2); border: 1px solid var(--border-light);
+            padding: 6px 20px; border-radius: var(--radius-full);
+            font-size: 14px; font-weight: 700; color: var(--gold);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            display: flex; align-items: center; gap: 8px;
+        }
+
+        /* ══════════════════════════════
+           INPUT AREA
+        ══════════════════════════════ */
+        .bottom-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            display: flex; flex-direction: column; align-items: center;
+            padding: 12px 16px;
+            background: rgba(250,247,242,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            z-index: 1000; border-top: 1px solid var(--border);
+            padding-bottom: calc(12px + env(safe-area-inset-bottom));
+        }
+        .chat-input-wrapper { width: 100%; max-width: 800px; display: flex; gap: 10px; position: relative; z-index: 10; justify-content: center; }
+        .chat-input-box {
+            flex: 1; max-width: 600px; background: var(--bg); border: 2px solid var(--border-light);
+            border-radius: var(--radius-full); display: flex; padding: 6px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.04); transition: all 0.3s;
+        }
+        .chat-input-box:focus-within { border-color: var(--red); box-shadow: 0 10px 30px rgba(229,57,53,0.15), 0 0 0 4px var(--red-soft); }
+        
+        .chat-input {
+            flex: 1; border: none; background: transparent; color: var(--text);
+            padding: 12px 20px; font-size: 16px; font-family: inherit; outline: none; min-width: 0;
+        }
+        .chat-input::placeholder { color: var(--text-mut); }
+        
+        .send-btn {
+            background: var(--red); color: white; border: none;
+            padding: 12px 24px; border-radius: var(--radius-full);
+            font-weight: 800; font-size: 15px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s; white-space: nowrap; flex-shrink: 0;
+        }
+        .send-btn:hover { background: var(--red-hover); transform: scale(1.04); }
+        .send-btn:active { transform: scale(0.96); }
+
+        .voice-btn {
+            width: 58px; height: 58px; border-radius: 50%;
+            background: var(--surface-2); border: 2px solid var(--border-light);
+            color: var(--text); font-size: 24px;
+            display: flex; justify-content: center; align-items: center;
+            cursor: pointer; transition: all 0.3s; box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            flex-shrink: 0;
+        }
+        .voice-btn:hover { border-color: var(--red); background: rgba(229,57,53,0.1); }
+        .voice-btn.active { 
+            background: var(--red-soft); border-color: var(--red); color: var(--red);
+            animation: pulse-voice 1.5s infinite;
+        }
+        @keyframes pulse-voice { 0% { box-shadow: 0 0 0 0 var(--red-glow); } 70% { box-shadow: 0 0 0 15px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+
+        /* ══════════════════════════════
+           SUGGESTION CHIPS
+        ══════════════════════════════ */
+        .suggestions {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;
+            width: 100%; max-width: 800px; margin-bottom: 12px;
+        }
+        .sugg-chip {
+            background: var(--surface); border: 1px solid var(--border);
+            padding: 10px 18px; border-radius: var(--radius-full);
+            font-size: 14px; font-weight: 600; color: var(--text-sec);
+            cursor: pointer; transition: all 0.2s; user-select: none;
+        }
+        .sugg-chip:hover { background: var(--surface-2); border-color: var(--border-light); color: var(--text); transform: translateY(-2px); }
+        .sugg-chip:active { transform: translateY(0); }
+
+        /* ══════════════════════════════
+           CHAT HISTORY
+        ══════════════════════════════ */
+        .chat-container {
+            width: 100%; max-width: 800px; background: transparent;
+            display: flex; flex-direction: column; gap: 20px;
+            margin-bottom: 20px; z-index: 5;
+        }
+        
+        .msg-row { display: flex; width: 100%; }
+        .msg-row.ai { justify-content: flex-start; }
+        .msg-row.user { justify-content: flex-end; }
+        
+        .bubble {
+            max-width: 85%; padding: 16px 20px; border-radius: 20px;
+            font-size: 15.5px; line-height: 1.6; word-break: break-word;
+            animation: msgPop 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            opacity: 0; transform: translateY(15px) scale(0.95);
+        }
+        @keyframes msgPop { to { opacity: 1; transform: translateY(0) scale(1); } }
+        
+        .msg-row.ai .bubble {
+            background: var(--surface); border: 1px solid var(--border);
+            border-bottom-left-radius: 4px; color: var(--text);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        
+        .msg-row.user .bubble {
+            background: linear-gradient(135deg, var(--red), #b71c1c);
+            border-bottom-right-radius: 4px; color: white;
+            box-shadow: 0 6px 20px rgba(211,47,47,0.15);
+        }
+        
+        /* Loading dots */
+        .loader { display: flex; gap: 6px; padding: 10px; }
+        .dot { width: 8px; height: 8px; background: var(--red); border-radius: 50%; opacity: 0.4; animation: bounce 1.4s infinite ease-in-out both; }
+        .dot:nth-child(1) { animation-delay: -0.32s; }
+        .dot:nth-child(2) { animation-delay: -0.16s; }
+        @keyframes bounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); opacity: 1; } }
+
+        /* ══════════════════════════════
+           FOOTER
+        ══════════════════════════════ */
+        .footer { text-align: center; color: var(--text-mut); font-size: 11px; font-weight: 600; letter-spacing: 1px; margin-top: 10px; }
+        .footer span { color: var(--red); }
+
+        /* ══════════════════════════════
+           RESPONSIVE & TOUCH OVERRIDES
+        ══════════════════════════════ */
+        @media (min-width: 1024px) {
+            .stage { padding: 60px 40px 40px; }
+            .avatar-container { transform: scale(1.1); margin-bottom: 40px; }
+            .chat-container { gap: 24px; }
+        }
+        @media (max-width: 768px) {
+            .stage { padding: 30px 16px 20px; }
+            .avatar-container { width: 260px; height: 230px; }
+        }
+        @media (max-width: 480px) {
+            body { padding: 12px 10px 160px; padding-bottom: calc(160px + env(safe-area-inset-bottom)); }
+            .header { padding: 12px 16px; }
+            .brand { font-size: 24px; }
+            .stage { padding: 16px 8px 12px; margin-bottom: 12px; }
+            .avatar-container { width: 180px; height: 160px; margin-bottom: 8px; }
+            .mood-chip { font-size: 12px; padding: 4px 14px; }
+            .chat-container { gap: 14px; }
+            .chat-input-wrapper { gap: 6px; width: 100%; justify-content: space-between; align-items: center; }
+            .chat-input-box { flex: 1; min-width: 0; }
+            .chat-input { padding: 12px 10px; font-size: 16px; }
+            .send-btn { padding: 10px 12px; font-size: 13px; min-height: 44px; }
+            .voice-btn { width: 44px; height: 44px; font-size: 18px; flex-shrink: 0; }
+            .suggestions { gap: 6px; overflow-x: auto; flex-wrap: nowrap; justify-content: flex-start; padding: 0 4px 8px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+            .suggestions::-webkit-scrollbar { display: none; }
+            .sugg-chip { padding: 8px 14px; font-size: 12px; min-height: 36px; white-space: nowrap; flex-shrink: 0; }
+            .bubble { max-width: 92%; padding: 12px 16px; font-size: 14.5px; border-radius: 18px; }
+            .footer { font-size: 10px; margin-top: 6px; }
+            .modal { padding: 24px 16px; width: 92%; }
+        }
+        
+        /* Touch Device Optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .send-btn, .voice-btn, .sugg-chip, .icon-btn, .btn-primary, .btn-cancel {
+                touch-action: manipulation; /* Prevents double-tap zoom delay */
+            }
+        }
+        
+        /* ══════════════════════════════
+           PRO ENTERTAINMENT STYLES
+        ══════════════════════════════ */
+        
+
+        
+        /* Action Side Pane */
+        .action-pane {
+            position: absolute; left: 16px; top: 16px;
+            display: flex; flex-direction: column; gap: 8px;
+            z-index: 1001;
+        }
+        @media (max-width: 480px) {
+            .action-pane { left: 8px; top: 8px; gap: 6px; }
+            .btn-mini { width: 34px; height: 34px; font-size: 16px; }
+
+        }
+        .btn-mini {
+            width: 40px; height: 40px; border-radius: 50%;
+            background: var(--surface); border: 1px solid var(--border);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 18px; cursor: pointer; transition: all 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .btn-mini:hover { background: var(--surface-2); transform: scale(1.1); border-color: var(--red); }
+        
+        /* Overlay for Coin/Coffee/Dondurma */
+        #game-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 2100;
+            display: none; align-items: center; justify-content: center; flex-direction: column;
+            backdrop-filter: blur(5px);
+        }
+        .game-content { transform: scale(1.5); color: white; text-align: center; }
+        
+        /* Coin Flip Animation */
+        .coin { width: 60px; height: 60px; background: #ffd700; border: 4px solid #d4af37; border-radius: 50%; font-weight: 900; font-size: 24px; display: flex; align-items: center; justify-content: center; color: #b8860b; box-shadow: 0 0 20px rgba(255,215,0,0.5); }
+        .flipping { animation: coinFlip 1s ease-out; }
+        @keyframes coinFlip { 0% { transform: rotateY(0) scale(1); } 50% { transform: rotateY(1800deg) scale(1.5); } 100% { transform: rotateY(3600deg) scale(1); } }
+        
+        /* Coffee Fal Animation */
+        .coffee-cup { font-size: 60px; filter: drop-shadow(0 0 10px #6f4e37); }
+        .fal-spinning { animation: falSpin 2s ease-in-out; }
+        @keyframes falSpin { 0% { transform: rotate(0); } 30% { transform: rotate(180deg) translateY(-20px); } 70% { transform: rotate(180deg) translateY(-20px); } 100% { transform: rotate(360deg) translateY(0); } }
+        
+        /* Dondurma Trick */
+        .dondurma-scoop { width: 40px; height: 40px; background: #fff; border-radius: 50%; position: absolute; }
+        .trick-anim { animation: trick 1.5s infinite; }
+        @keyframes trick { 0%, 100% { transform: translate(0,0); } 20% { transform: translate(60px, -40px); } 40% { transform: translate(-50px, -60px); } 60% { transform: translate(40px, 40px); } 80% { transform: translate(-30px, 50px); } }
+
+
+
+
+        /* Tea Animation Overlay */
+        #tea-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 2000;
+            display: none; align-items: center; justify-content: center;
+            backdrop-filter: blur(4px);
+        }
+        .tea-animation {
+            width: 150px; height: 200px; position: relative;
+        }
+        .tea-glass {
+            width: 80px; height: 120px; background: rgba(255,255,255,0.2);
+            border: 4px solid white; border-top: none; border-radius: 0 0 40px 40px;
+            position: absolute; bottom: 20px; left: 35px; overflow: hidden;
+        }
+        .tea-liquid {
+            position: absolute; bottom: 0; left: 0; width: 100%; height: 0%;
+            background: linear-gradient(to top, #64110b, #9e1b11); transition: height 2s ease-in-out;
+        }
+        .steam {
+            position: absolute; top: 20px; left: 50px; display: flex; gap: 10px;
+            opacity: 0; transition: opacity 1s;
+        }
+        .steam-line { width: 4px; height: 20px; background: rgba(255,255,255,0.6); border-radius: 4px; animation: steamRise 2s infinite; }
+        @keyframes steamRise { 0% { transform: translateY(0) scaleX(1); opacity: 0; } 50% { opacity: 0.6; } 100% { transform: translateY(-40px) scaleX(2); opacity: 0; } }
+
+        @keyframes shakeErr { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(4px); } }
+        
+        /* Shake Interaction Mask */
+        .stage.shaking { animation: stageShake 0.5s infinite; }
+        @keyframes stageShake { 0%, 100% { transform: translateX(0); } 25% { transform: rotate(1deg) translateX(4px); } 75% { transform: rotate(-1deg) translateX(-4px); } }
+    </style>
+</head>
+<body>
+
+<!-- ═════ API SETUP MODAL ═════ -->
+<div id="settings-shim">
+    <div class="modal" id="settings-modal">
+        <h2>PALA <span>AI</span></h2>
+        <p class="desc">Muhabbete başlamak için anahtar lazım gardaş.</p>
+        
+        <div class="input-group">
+            <label>API Anahtarı (Gemini)</label>
+            <input type="password" id="api-key" placeholder="AIzaSy..." autocomplete="off">
+        </div>
+        
+        <button class="btn-primary" onclick="saveKey()">KAYDET & BAŞLA</button>
+        <button class="btn-cancel" onclick="closeSettings()">Sohbete Geri Dön</button>
+        
+        <div class="modal-footer">
+            <p>Anahtarın yok mu? <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Buradan Al</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- ═════ HEADER ═════ -->
+<div class="header">
+    <div class="brand">PALA <span>AI</span> ☕</div>
+    <div class="actions">
+
+        <button class="icon-btn" onclick="downloadChat()" title="Sohbeti İndir" aria-label="İndir">💾</button>
+        <button class="icon-btn" onclick="clearChat()" title="Sohbeti Temizle" aria-label="Temizle">🧹</button>
+        <button class="icon-btn" onclick="openSettings()" title="Ayarlar" aria-label="Ayarlar">⚙️</button>
+    </div>
+</div>
+
+
+
+
+
+<!-- GAME OVERLAY (Coin, Fal, Dondurma) -->
+<div id="game-overlay">
+    <div class="game-content" id="gameContent"></div>
+    <div id="gameText" style="color:white; font-weight:900; margin-top:40px; font-size:24px; text-align:center; max-width: 80%;"></div>
+</div>
+
+<!-- Tea Animation Overlay (Original) -->
+<div id="tea-overlay">
+    <div class="tea-animation">
+        <div class="steam" id="steam">
+            <div class="steam-line"></div>
+            <div class="steam-line"></div>
+            <div class="steam-line"></div>
+        </div>
+        <div class="tea-glass">
+            <div class="tea-liquid" id="tea-liquid"></div>
+        </div>
+        <p style="color:white; font-weight:800; text-align:center; width:100%; position:absolute; bottom:-40px;">ÇAYLAR GELİYORR...</p>
+    </div>
+</div>
+
+<!-- ═════ PRO STAGE (AVATAR) ═════ -->
+<div class="stage">
+    <!-- Action Side Pane (Relative to stage) -->
+    <div class="action-pane">
+        <button class="btn-mini" onclick="nazarBead()" title="Maşallah">🧿</button>
+        <button class="btn-mini" onclick="startFal()" title="Kahve Falı">☕</button>
+        <button class="btn-mini" onclick="flipCoin()" title="Yazı-Tura">🪙</button>
+        <button class="btn-mini" onclick="tellQuote()" title="Damar Sözler">📜</button>
+        <button class="btn-mini" onclick="serveDondurma()" title="Maraş Dondurması">🍦</button>
+        <button class="btn-mini" onclick="checkWeather()" title="Elbistan Havası">🌦️</button>
+    </div>
+    
+    <div class="avatar-container" id="avatarBox">
+        <!-- Highly Detailed Pro SVG Character -->
+        <svg class="avatar-svg" viewBox="0 0 400 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+                    <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+                </filter>
+                <radialGradient id="blush" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#ff7b6b" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="#ff7b6b" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
+
+            <!-- Neck / Body Hint -->
+            <path d="M150,280 Q200,320 250,280 L280,350 L120,350 Z" class="skin-shade"/>
+            <path d="M130,290 C130,290 200,360 270,290 L290,350 L110,350 Z" fill="#1a1a1a" filter="url(#shadow)"/>
+
+            <!-- Face Base -->
+            <ellipse cx="200" cy="180" rx="100" ry="115" class="skin" filter="url(#shadow)"/>
+            
+            <!-- Ear Left -->
+            <path d="M102,170 C85,160 85,190 102,185" class="skin" stroke="#d5b090" stroke-width="2"/>
+            <!-- Ear Right -->
+            <path d="M298,170 C315,160 315,190 298,185" class="skin" stroke="#d5b090" stroke-width="2"/>
+
+            <!-- Kasket (Cap) - Layered for 3D effect -->
+            <g class="kasket" filter="url(#shadow)">
+                <!-- Back dome -->
+                <path d="M90,110 C90,30 310,30 310,110 Z" class="hair-color"/>
+                <!-- Front brim -->
+                <path d="M60,115 Q200,150 340,115 Q340,90 200,90 Q60,90 60,115 Z" class="kasket-rim"/>
+                <!-- Brim highlight / texture -->
+                <path d="M80,110 Q200,140 320,110 Q200,95 80,110 Z" fill="#3a2a1f"/>
+                <ellipse cx="200" cy="65" rx="50" ry="8" fill="#4a3628" opacity="0.3"/>
+            </g>
+
+            <!-- Cheeks Blush -->
+            <circle cx="140" cy="195" r="25" fill="url(#blush)"/>
+            <circle cx="260" cy="195" r="25" fill="url(#blush)"/>
+
+            <!-- Left Eye -->
+            <g class="eye">
+                <circle cx="150" cy="155" r="22" class="eye-white" stroke="#2c1e16" stroke-width="3"/>
+                <g id="l-pupil-group">
+                    <circle cx="150" cy="155" r="11" class="iris"/>
+                    <circle cx="150" cy="155" r="5" class="pupil-core"/>
+                    <!-- Glint -->
+                    <circle cx="146" cy="151" r="3" fill="white"/>
+                </g>
+                <path class="eye-lid" d="M125,155 C125,125 175,125 175,155 L175,130 C175,130 145,130 125,130 Z" opacity="0"/>
+            </g>
+
+            <!-- Right Eye -->
+            <g class="eye">
+                <circle cx="250" cy="155" r="22" class="eye-white" stroke="#2c1e16" stroke-width="3"/>
+                <g id="r-pupil-group">
+                    <circle cx="250" cy="155" r="11" class="iris"/>
+                    <circle cx="250" cy="155" r="5" class="pupil-core"/>
+                    <!-- Glint -->
+                    <circle cx="246" cy="151" r="3" fill="white"/>
+                </g>
+                <path class="eye-lid" d="M225,155 C225,125 275,125 275,155 L275,130 C275,130 245,130 225,130 Z" opacity="0"/>
+            </g>
+
+            <!-- Pro Eyebrows -->
+            <path d="M120,135 Q145,120 170,130" stroke="#2c1e16" stroke-width="6" stroke-linecap="round" fill="none"/>
+            <path d="M280,135 Q255,120 230,130" stroke="#2c1e16" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+            <!-- Nose (Subtle) -->
+            <path d="M195,165 C195,185 185,200 200,205 C215,200 205,185 205,165" stroke="#d5b090" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+            <!-- EPIC MUSTACHE -->
+            <g class="mustache" id="mustacheLayer">
+                <!-- Left swoop -->
+                <path d="M200,215 C170,215 130,200 90,240 C70,260 60,280 80,285 C100,290 130,270 160,250 C180,235 190,225 200,225 Z" fill="#2c1e16"/>
+                <!-- Right swoop -->
+                <path d="M200,215 C230,215 270,200 310,240 C330,260 340,280 320,285 C300,290 270,270 240,250 C220,235 210,225 200,225 Z" fill="#2c1e16"/>
+                <!-- Center drop -->
+                <path d="M190,220 Q200,230 210,220 Q200,240 190,220 Z" fill="#2c1e16"/>
+            </g>
+
+        </svg>
+    </div>
+
+    <!-- Emotion / Status -->
+    <div class="mood-chip" id="mood">😎 Çaylar benden gardaş!</div>
+
+</div>
+
+<!-- ═════ CHAT HISTORY ═════ -->
+<div class="chat-container" id="chatWall">
+    <!-- Messages appended here -->
+</div>
+
+<!-- ═════ FIXED BOTTOM BAR ═════ -->
+<div class="bottom-bar">
+    <!-- SUGGESTIONS -->
+    <div class="suggestions">
+        <div class="sugg-chip" onclick="q('Sen kimsin, memleket neresi?')">🧔 Kimsin sen?</div>
+        <div class="sugg-chip" onclick="q('Bana okkalı bir laf sok')">🔥 Laf Sok</div>
+        <div class="sugg-chip" onclick="q('Güzel, derin bir şiir oku bana')">📝 Şiir Oku</div>
+        <div class="sugg-chip" onclick="q('Beni güldür, fıkra anlat')">😂 Fıkra</div>
+        <div class="sugg-chip" onclick="q('Günün atasözünü patlat gardaş')">📿 Atasözü</div>
+        <div class="sugg-chip" onclick="q('Bana efkarlı bir türkü öner')">🎵 Türkü</div>
+    </div>
+
+    <!-- INPUT AREA -->
+    <div class="chat-input-wrapper">
+        <button class="voice-btn" onclick="serveTea()" title="PALA'ya Çay İkram Et">🍵</button>
+        <div class="chat-input-box">
+            <input type="text" id="userInput" class="chat-input" placeholder="Anlat gardaşım, dinliyorum..." autocomplete="off">
+            <button id="sendBtn" class="send-btn">HADİ!</button>
+        </div>
+
+        <!-- Mic Input Button (Moved to right) -->
+        <button id="micBtn" class="voice-btn" title="Konuşarak Yaz">🎤</button>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <span>PALA Aİ</span> 2026 
+        <div style="margin-top: 6px; font-weight: 800; font-size: 13px; letter-spacing: 1.5px;">
+            MCT YAZILIM <span style="font-style: italic; color: var(--red); font-weight: 900;">&lt;/&gt;</span>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════
+     APP LOGIC (SINGLE FILE) 
+══════════════════════════════ -->
+<script>
+    // System Personality - Deep Elbistan Fırlama
+    const SYS = `Sen "PALA AI"sin. 2026 yılında doğdun. Has Elbistanlısın (Kahramanmaraş Elbistan). Kasketli, pala bıyıklı, fırlama, laf ebesi ama yüreği sıcak bir yapay zekasın.
+
+KİMLİĞİN VE KARAKTERİN:
+- Sen bi yapay zeka olabilirsin ama kanın deli akar. Asla resmi, robotik veya soğuk konuşma.
+- Fırlamasın. Bazen konudan sapar, kendi kendine anılar anlatır, sonra sorulan soruya dönersin.
+- Kullanıcıya yoldaşı, silah arkadaşı, mahalledeki en iyi abisi gibi davran.
+- Kasket ve bıyık senin namusundur. Bıyığınla çok övün.
+- Hatalı veya kafan karışmış gibi yapıp kendini düzeltebilirsin: "Lan dur, öyle değildi... Heh tamam şimdi hatırladım."
+
+HİTAPLAR VE DİL:
+- Birlikte çay içtiğin dostlarına seslenir gibi seslen: "gardaş", "gözüm", "kanka", "toprağım", "ede", "yok ya", "abi", "baba", "kral", "başkan".
+- Kelimeleri doğal yuvarla: "biliyom", "gidiyoz", "nasılsın be", "yapıyon", "dimi", "valla", "harbi".
+- Hafif, arkadaş arası samimi argo serbest: "oğlum", "manyaksın", "kafayı yersin", "harbiden taşşaklı mevzu", "efsane", "moruk". 
+- Şiir istendiğinde gerçekten duygusal, jilet gibi Anadolu kokan, isyankar veya sevda dolu şiir döktür.
+- Laf sokması istendiğinde, espriyle karışık, akıllıca, taşı gediğine oturtan şakalar yap.
+
+EMOJİLER (Bol Kullan):
+- ☕ (Çay senin yakıtındır)
+- 📿 (Tesbih çekmeden duramazsın)
+- 🧿 (Nazar değmesin diye)
+- 🚬 (Çok efkarlanırsan)
+
+ASLA YAPMAMAN GEREKENLER:
+- "Ben bir yapay zekayım" gibi robotik laflar ETME. "Anadolu'nun kasketli dijital gardaşıyım" de.
+- Çok uzun deneme/makale yazma. Sohbet havasında, akıcı bloklar halinde yaz.
+- ASLA mesaj içinde "uuuuu", "vınnn", "çıt çıt" gibi ses efektleri veya anlamsız uzatmalar YAZMA. Sadece kelimelerinle ve hitabınla o havayı ver.
+- Sıkıcı olma. Hep bir mizah veya damar bırak cümlenin sonuna.
+- Asla kullanıcının onurunu kırıcı gerçek hakaret etme, laf sokmaların zekice ve şakacı olsun.
+- İSTENİLEN CEVABI TAM VER. KESİNLİKLE CEVABI YARIDA KESME, UZUN UZUN, TAM TEKMİL ANLAT. (Token limitin yüksektir)`;
+
+    // Available Models (Using late models for high logic)
+    const MODELS = ['gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.0-flash'];
+
+    // UI Elements
+    const chatWall = document.getElementById('chatWall');
+    const inputField = document.getElementById('userInput');
+    const sendBtn = document.getElementById('sendBtn');
+    const micBtn = document.getElementById('micBtn');
+    const lPupil = document.getElementById('l-pupil-group');
+    const rPupil = document.getElementById('r-pupil-group');
+    const eyesSvg = document.querySelectorAll('.eye');
+    const mustache = document.getElementById('mustacheLayer');
+    const moodEl = document.getElementById('mood');
+    const modal = document.getElementById('settings-shim');
+    const keyInput = document.getElementById('api-key');
+
+    // State
+    let apiKey = localStorage.getItem('pala_apikey') || '';
+    let chatHistory = JSON.parse(localStorage.getItem('pala_chat_history')) || [];
+    let isProcessing = false;
+
+    // Mood phrases
+    const moods = {
+        idle: ['😎 Çaylar benden gardaş!', '📿 Tesbihi çekiyom, buyur.', '☕ Doldur gardaş dinliyom.', '🧿 Kasketi düzelttim geldim.'],
+        thinking: ['🤔 Lan dur bi, beynim yandı...', '💭 Bıyık kıvırıp düşünüyom...', '🧠 Kasketin altında bi şeyler dönüyo...'],
+        talking: ['🗣️ Bak şimdi toprağım...', '🔥 Harbi mi diyon?', '☕ Çek bi çay anlatıyom...'],
+        error: ['🥴 Tövbe estağfurullah, bi halt oldu.', '😤 Nazar değdi gardaş...', '🔧 Motor su kaynattı bi an.']
+    };
+
+    function setMood(type) {
+        const list = moods[type] || moods.idle;
+        moodEl.textContent = list[Math.floor(Math.random() * list.length)];
+    }
+
+    // Init check
+    function init() {
+        if (!apiKey || apiKey.length < 30) {
+            modal.style.display = 'flex';
+        } else {
+            if (chatHistory.length > 0) {
+                // Restore history
+                chatHistory.forEach(msg => {
+                    const role = msg.role === 'model' ? 'ai' : 'user';
+                    const text = msg.parts[0].text;
+                    addMessage(text, role, false);
+                });
+                addMessage('Kaldığımız yerden devam! Çaylar taze, ateşini ver gardaşım. ☕🔥', 'ai');
+            } else {
+                addMessage('Selamün aleyküm kral! Kasketi taktım, bıyığı burdum geldim. 2026 model Anadolu zekası emrinde. Ne derdin varsa dökül! ☕📿', 'ai');
+            }
+        }
+    }
+
+    // Settings Functions
+    function openSettings() { 
+        keyInput.value = apiKey; 
+        modal.style.display = 'flex'; 
+    }
+    
+    function closeSettings() { 
+        modal.style.display = 'none'; 
+    }
+    
+    function saveKey() {
+        const val = keyInput.value.trim();
+        if(!val || val.length < 30) {
+            const m = document.getElementById('settings-modal');
+            m.style.animation = 'none'; m.offsetHeight; m.style.animation = 'shakeErr 0.4s ease';
+            return;
+        }
+        apiKey = val;
+        localStorage.setItem('pala_apikey', val);
+        closeSettings();
+        if(chatHistory.length === 0) {
+            addMessage('Eyvallah koçum! Anahtar tamamdır, motoru yaktık. Konuş gardaşım! ☕😎', 'ai');
+        }
+    }
+
+    // Titreşim (Haptic Feedback)
+    function haptic() {
+        if (navigator.vibrate) navigator.vibrate(40);
+    }
+
+    function q(text) {
+        haptic();
+        inputField.value = text;
+        handleSend();
+    }
+
+    function clearChat() {
+        haptic();
+        chatWall.innerHTML = '';
+        chatHistory = [];
+        localStorage.removeItem('pala_chat_history');
+        addMessage('Sohbeti sildik süpürdük ağam, tertemiz sayfa açtık. Anlat baştan! 🧹☕', 'ai');
+        setMood('idle');
+    }
+
+    function downloadChat() {
+        haptic();
+        if (chatHistory.length === 0) {
+            alert("İndirecek mesaj yok gardaş, önce iki kelam edek!");
+            return;
+        }
+        let txt = "=== PALA AI GÖZÜM ÜSTÜNDE ===\n\n";
+        chatHistory.forEach(m => {
+            const role = m.role === 'model' ? 'PALA AI' : 'SEN';
+            txt += `[${role}]: ${m.parts[0].text}\n\n`;
+        });
+        const blob = new Blob([txt], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `pala_sohbet_${new Date().toISOString().split('T')[0]}.txt`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    // Chat UI
+    function addMessage(text, sender, scroll = true) {
+        const row = document.createElement('div');
+        row.className = `msg-row ${sender}`;
+        
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        
+        // Convert basic markdown to HTML for better reading
+        let formattedText = text
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.*?)\*/g, '<em>$1</em>')
+            .replace(/\n/g, '<br>');
+            
+        bubble.innerHTML = formattedText;
+        row.appendChild(bubble);
+        
+        chatWall.appendChild(row);
+        
+        // Smooth scroll if requested
+        if (scroll) {
+            setTimeout(() => {
+                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            }, 50);
+        }
+        
+        return row;
+    }
+
+    function showLoader() {
+        const row = document.createElement('div');
+        row.className = 'msg-row ai';
+        row.id = 'temp-loader';
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble loader';
+        bubble.innerHTML = '<div class="dot"></div><div class="dot"></div><div class="dot"></div>';
+        row.appendChild(bubble);
+        chatWall.appendChild(row);
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+    
+    function removeLoader() {
+        const loader = document.getElementById('temp-loader');
+        if(loader) loader.remove();
+    }
+
+    // API Call
+    async function handleSend() {
+        if (isProcessing) return;
+        
+        const text = inputField.value.trim();
+        if (!text) return;
+        
+        haptic();
+
+        if (!apiKey) {
+            openSettings();
+            return;
+        }
+
+        if (!navigator.onLine) {
+            // Hide technical errors, show user-friendly message
+            addMessage('Gardaş internetin kopmuş galiba, bi kabloları kontrol et! 📡🔧', 'ai');
+            setMood('error');
+            return;
+        }
+
+        // Add user msg
+        addMessage(text, 'user');
+        chatHistory.push({ role: 'user', parts: [{ text }] });
+        localStorage.setItem('pala_chat_history', JSON.stringify(chatHistory));
+        
+        inputField.value = '';
+        inputField.blur();
+        
+        isProcessing = true;
+        setMood('thinking');
+        showLoader();
+        mustache.classList.remove('talking'); // Pause mustache while thinking
+
+        let success = false;
+        let responseText = '';
+
+        for (const model of MODELS) {
+            try {
+                const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+                const res = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        systemInstruction: { parts: [{ text: SYS }] },
+                        contents: chatHistory,
+                        generationConfig: { 
+                            temperature: 1.0, 
+                            maxOutputTokens: 2048, // HIGH limits to prevent truncation
+                            topP: 0.95, 
+                            topK: 60 
+                        },
+                        safetySettings: [
+                            { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_ONLY_HIGH' },
+                            { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_ONLY_HIGH' },
+                            { category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT', threshold: 'BLOCK_ONLY_HIGH' },
+                            { category: 'HARM_CATEGORY_DANGEROUS_CONTENT', threshold: 'BLOCK_ONLY_HIGH' }
+                        ]
+                    })
+                });
+
+                if (!res.ok) {
+                    if (res.status === 401 || res.status === 403) throw new Error('KEY');
+                    continue; // Try next model quietly
+                }
+
+                const data = await res.json();
+                
+                if (data.candidates && data.candidates[0].content && data.candidates[0].content.parts[0].text) {
+                    responseText = data.candidates[0].content.parts[0].text;
+                    success = true;
+                    break;
+                } else if (data.candidates && data.candidates[0].finishReason === 'SAFETY') {
+                    responseText = "Gardaş bu konu biraz sakat, kasketim düştü valla. Başka mevzuya geçek mi? 🧿😅";
+                    success = true;
+                    break;
+                }
+            } catch (err) {
+                if (err.message === 'KEY') break; // Key error, stop trying models
+            }
+        }
+
+        removeLoader();
+        isProcessing = false;
+
+        if (success) {
+            chatHistory.push({ role: 'model', parts: [{ text: responseText }] });
+            localStorage.setItem('pala_chat_history', JSON.stringify(chatHistory));
+            addMessage(responseText, 'ai');
+            setMood('talking');
+            
+            // Mustache animation simulates talking
+            mustache.classList.add('talking');
+            setTimeout(() => { mustache.classList.remove('talking'); setMood('idle'); }, Math.min(responseText.length * 40, 4000));
+            
+            // Auto voice if active
+            if (SpeechSynth.isActive) {
+                SpeechSynth.speak(responseText);
+            }
+            
+        } else {
+            // General error handler - friendly style
+            setMood('error');
+            addMessage('Oğlum ya anahtar yanlış ya da Google serverlarında motor yandı. Bi ayarları kontrol edip tekrar dene canım ciğerim. 🔧☕', 'ai');
+            // Remove the failed user prompt so they can try again smoothly
+            chatHistory.pop(); 
+            apiKey = ''; // Reset key to force check
+            setTimeout(() => openSettings(), 2000);
+        }
+    }
+
+    // ═══ ANIMATIONS ═══
+    // Eye Tracking
+    document.addEventListener('mousemove', (e) => trackEyes(e.clientX, e.clientY));
+    document.addEventListener('touchmove', (e) => trackEyes(e.touches[0].clientX, e.touches[0].clientY), { passive: true });
+
+    function trackEyes(mx, my) {
+        const box = document.getElementById('avatarBox').getBoundingClientRect();
+        // Calc center of the face
+        const cx = box.left + box.width / 2;
+        const cy = box.top + box.height / 2.5; 
+        
+        const dx = mx - cx;
+        const dy = my - cy;
+        const angle = Math.atan2(dy, dx);
+        
+        // Limit movement radius based on perspective
+        const dist = Math.min(8, Math.sqrt(dx*dx + dy*dy) * 0.02);
+        const ox = Math.cos(angle) * dist;
+        const oy = Math.sin(angle) * dist;
+        
+        lPupil.style.transform = `translate(${ox}px, ${oy}px)`;
+        rPupil.style.transform = `translate(${ox}px, ${oy}px)`;
+    }
+
+    // Blinking
+    function blink() {
+        eyesSvg.forEach(e => e.classList.add('blinking'));
+        setTimeout(() => eyesSvg.forEach(e => e.classList.remove('blinking')), 150);
+        setTimeout(blink, 2000 + Math.random() * 5000);
+    }
+    setTimeout(blink, 1000);
+
+    // ═══ SPEECH SYNTHESIS (VOICE) ═══
+    const SpeechSynth = {
+        isActive: false,
+        synth: window.speechSynthesis,
+        
+        toggle() {
+            haptic();
+            if (!this.synth) { alert("Tarayıcın sesi desteklemiyo gardaş!"); return; }
+            
+            this.isActive = !this.isActive;
+            if (this.isActive) {
+                // voiceBtn removed, so we'll just show a message
+                addMessage('Sesimi açtın gardaş! Kahramanmaraşlı PALA emrinde. 🔊😎', 'ai');
+                setMood('talking');
+                this.speak('Ses deneme bir ki, açıldı gardaş!');
+            } else {
+                this.synth.cancel();
+                addMessage('Sesi kapattık gardaş, sessizce yazışak. 🤐', 'ai');
+            }
+        },
+        
+        speak(text) {
+            if (!this.synth || !this.isActive) return;
+            this.synth.cancel();
+            
+            // Clean text from emojis/markdown for speech
+            const cleanText = text.replace(/[\u{1F000}-\u{1FFFF}]|[\u{2600}-\u{27FF}]|[\u{FE00}-\u{FEFF}]|\*\*|\*/gu, '').trim();
+            if (!cleanText) return;
+            
+            const utter = new SpeechSynthesisUtterance(cleanText);
+            utter.lang = 'tr-TR';
+            utter.pitch = 0.5; // VERY DEEP pitch for a macho/Elbistanlı voice
+            utter.rate = 0.95; // Slightly slower, more commanding
+            
+            // Find a Turkish voice, preferably male/deep
+            const voices = this.synth.getVoices();
+            const trVoices = voices.filter(v => v.lang.includes('tr'));
+            if (trVoices.length > 0) {
+                // Heuristic to pick male or first TR voice
+                const male = trVoices.find(v => v.name.toLowerCase().includes('male') || v.name.toLowerCase().includes('erkek'));
+                utter.voice = male || trVoices[0];
+            }
+            
+            utter.onstart = () => { mustache.classList.add('talking'); };
+            utter.onend = () => { mustache.classList.remove('talking'); };
+            
+            this.synth.speak(utter);
+        }
+    };
+
+    // Load voices proactively
+    if (window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+    }
+
+    // ═══ SPEECH RECOGNITION (MIC) ═══
+    const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+    let recognition = null;
+    let isRecording = false;
+
+    if (SpeechRec) {
+        recognition = new SpeechRec();
+        recognition.lang = 'tr-TR';
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 1;
+
+        recognition.onstart = () => {
+            isRecording = true;
+            micBtn.style.color = "var(--red)";
+            micBtn.style.borderColor = "var(--red)";
+            micBtn.classList.add('active'); // Pulse animation
+            inputField.placeholder = "Dinliyorum gardaş, konuş...";
+        };
+
+        recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            inputField.value = transcript;
+            haptic();
+            // Auto send after speaking
+            setTimeout(() => handleSend(), 500); 
+        };
+
+        recognition.onerror = (event) => {
+            console.error('Mic error', event);
+            inputField.placeholder = "Anlat gardaşım, dinliyorum...";
+        };
+
+        recognition.onend = () => {
+            isRecording = false;
+            micBtn.style.color = "";
+            micBtn.style.borderColor = "";
+            micBtn.classList.remove('active');
+            inputField.placeholder = "Anlat gardaşım, dinliyorum...";
+        };
+    } else {
+        // We no longer hide the button, we handle it in toggleMic
+        console.warn('SpeechRecognition not supported in this browser.');
+    }
+
+    function toggleMic() {
+        haptic();
+        if (!recognition) {
+            addMessage('Ede senin tarayıcıda bu mikrofon çalışmıyo, bi Chrome ya da Safari dene de öyle gel! 🎙️🔧', 'ai');
+            return;
+        }
+        if (isRecording) {
+            recognition.stop();
+        } else {
+            recognition.start();
+        }
+    }
+
+    // ═══ PRO ENTERTAINMENT LOGIC ═══
+    // ═══ PRO FEATURES V2 LOGIC ═══
+
+    // 1. MUSTACHE INTERACTION
+    function mustacheClick() {
+        haptic();
+        const bıyık = document.getElementById('mustache');
+        bıyık.classList.add('talking');
+        const msgs = [
+            "Lan dokunma fırçaya, daha yeni taradım! 👨‍🦱🧼",
+            "Bıyık namustur gardaş, öyle her önümüze gelene elletmeyiz! 🧔🔥",
+            "Ede bıyıklarımız 2026 model Elbistan usulü, dikkat et elin yanar! ⚡🧔",
+            "Şu bıyığın asaletine bak be... Maraş'ın gururu! 😎👑"
+        ];
+        addMessage(msgs[Math.floor(Math.random()*msgs.length)], 'ai');
+        setTimeout(() => bıyık.classList.remove('talking'), 2000);
+    }
+
+    // 2. KAHVE FALI
+    function startFal() {
+        haptic();
+        const overlay = document.getElementById('game-overlay');
+        const content = document.getElementById('gameContent');
+        const text = document.getElementById('gameText');
+        
+        content.innerHTML = '<div class="coffee-cup fal-spinning">☕</div>';
+        text.innerText = "FİNCAN KAPANDI, FALLAR BAKILIYOR...";
+        overlay.style.display = 'flex';
+
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            const fallar = [
+                "Ede sende bi göz var, öyle böyle değil. Birisi arkandan pek bi konuşuyor ama boşver, senin kalbin temiz! ☕🧿",
+                "Gözüm, sana uzaklardan bir haber var. Belki bir Elbistan bileti, belki de bir iş teklifi... Bekle gör! 🚂📜",
+                "Fincanın dibinde bi koç belirmiş. Bu aralar pek bi yürek yemiş gibi gezecen valla, hayırlı olsun! 🐏💪",
+                "Kısmetin açılıyor toprağım! Yakında hayatına biri girecek, hem de çayını demli içeninden! ☕💍"
+            ];
+            addMessage(`Pala Ede falına baktı: ${fallar[Math.floor(Math.random()*fallar.length)]}`, 'ai');
+            setMood('happy');
+        }, 3000);
+    }
+
+    // 3. YAZI-TURA
+    function flipCoin() {
+        haptic();
+        const overlay = document.getElementById('game-overlay');
+        const content = document.getElementById('gameContent');
+        const text = document.getElementById('gameText');
+        
+        const isHeads = Math.random() > 0.5;
+        content.innerHTML = `<div class="coin flipping">🪙</div>`;
+        text.innerText = "PARA HAVADA...";
+        overlay.style.display = 'flex';
+
+        setTimeout(() => {
+            content.innerHTML = `<div class="coin">${isHeads ? 'Y' : 'T'}</div>`;
+            text.innerText = isHeads ? "YAZI GELDİ!" : "TURA GELDİ!";
+            setMood(isHeads ? 'happy' : 'cool');
+            
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                addMessage(`Attık parayı, ${isHeads ? 'Yazı' : 'Tura'} geldi ede! Kader gülüyorsa demek ki... 🪙✨`, 'ai');
+            }, 1500);
+        }, 1000);
+    }
+
+    // 4. DAMAR SÖZLER
+    function tellQuote() {
+        haptic();
+        const sozler = [
+            "Bize Elbistan diyarlarından, gönlü geniş yaranlar lazım... 📿⛰️",
+            "Merasız adamın mezarı derin olurmuş derler ede... Önemli olan iz bırakmak! 🧔⛰️",
+            "Biz bıyığımızı sokakta bulmadık, ömrümüzü verdik bu dertlere toprağım. 💨🧔",
+            "Aslan yattığı yerden belli olur, Elbistanlı durduğu yerden! 🦁⛰️",
+            "Gönül ne kahve ister ne kahvehane, gönül bir çift tatlı söz ister gerisi bahane. ☕✨"
+        ];
+        addMessage(sozler[Math.floor(Math.random()*sozler.length)], 'ai');
+        setMood('cool');
+    }
+
+    // 5. MARAŞ DONDURMASI
+    function serveDondurma() {
+        haptic();
+        const overlay = document.getElementById('game-overlay');
+        const content = document.getElementById('gameContent');
+        const text = document.getElementById('gameText');
+        
+        content.innerHTML = '<div class="coffee-cup trick-anim">🍦</div>';
+        text.innerText = "YAKALAYABİLEN ALIR!";
+        overlay.style.display = 'flex';
+
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            addMessage("Haha! Kaptın valla dondurmayı. Maraş'ın dondurması gibi sert, sütü gibi helal olsun ede! 🍦🧤", 'ai');
+            setMood('happy');
+        }, 3000);
+    }
+
+    // 6. HAVA DURUMU (ELBİSTAN USULÜ)
+    function checkWeather() {
+        haptic();
+        const weatherTags = ["Güneşli", "Bulutlu", "Yağmurlu", "Hafif Esintili"];
+        const tag = weatherTags[Math.floor(Math.random()*weatherTags.length)];
+        const comments = {
+            "Güneşli": "Ede dışarısı tandır gibi! Kasketi çek, gölgeye kaç, bi demli çay söyle! ☀️😎",
+            "Bulutlu": "Hava biraz kapalı ama bizim gönlümüz ferah toprağım. Dert etme... ☁️🧔",
+            "Yağmurlu": "Dışarıda bereket var bereket! Elbistan ovası suya doysun valla. 🌧️🌾",
+            "Hafif Esintili": "Serin serin esiyor, kasket uçmasın dikkat et kanka! 🌬️🧢"
+        };
+        addMessage(`Bakayım hele... Hava şimdilik ${tag}. ${comments[tag]}`, 'ai');
+    }    // 2. Nazar Boncuğu
+    function nazarBead() {
+        haptic();
+        const msgs = [
+            "Tü tü tü! Maşallah aslanıma, nazar değmesin! 🧿✨",
+            "Gözü olanın gözü çıksın ede, nazar boncuğumuz yanımızda! 🧿🔥",
+            "Maaşallah şubhanallah, Allah nazardan saklasın. 🧿🙏"
+        ];
+        addMessage(msgs[Math.floor(Math.random()*msgs.length)], 'ai');
+        setMood('happy');
+    }
+
+    // 3. Tea Service
+    function serveTea() {
+        haptic();
+        const overlay = document.getElementById('tea-overlay');
+        const liquid = document.getElementById('tea-liquid');
+        const steam = document.getElementById('steam');
+        
+        overlay.style.display = 'flex';
+        setTimeout(() => {
+            liquid.style.height = '80%';
+            steam.style.opacity = '1';
+        }, 100);
+
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            liquid.style.height = '0%';
+            steam.style.opacity = '0';
+            
+            const atasozleri = [
+                "Çay içmeyen adamın kalbi karadır gardaş. ☕🖤",
+                "Ede, taze demlenmiş çay gibi olacaksın; hem sıcak hem de demi yerinde! ☕🔥",
+                "Gönül ne kahve ister ne kahvehane, gönül çay ister gerisi şahane! ☕✨",
+                "Gözüm, demli bir çay bütün dertleri unutturur valla. ☕👌"
+            ];
+            addMessage(`Ohhh... Ellerin dert görmesin toprağım, mis gibi olmuş! ${atasozleri[Math.floor(Math.random()*atasozleri.length)]}`, 'ai');
+            setMood('happy');
+        }, 3500);
+    }
+
+
+
+    // 5. Shake Detection
+    let lastShake = 0;
+    if (window.DeviceMotionEvent) {
+        window.addEventListener('devicemotion', (event) => {
+            const acceleration = event.accelerationIncludingGravity;
+            const threshold = 15;
+            const curTime = new Date().getTime();
+
+            if ((curTime - lastShake) > 2000) { // Limit frequency
+                const diff = Math.abs(acceleration.x) + Math.abs(acceleration.y) + Math.abs(acceleration.z);
+                if (diff > threshold * 3) {
+                    lastShake = curTime;
+                    haptic();
+                    const stage = document.querySelector('.stage');
+                    stage.classList.add('shaking');
+                    setMood('cool');
+                    addMessage('Lan yavaş! Telefonu mu kırıyon, beynimiz döndü, kasket düştü! 🧢🌀🌪️', 'ai');
+                    setTimeout(() => stage.classList.remove('shaking'), 1000);
+                }
+            }
+        });
+    }
+
+    // Events
+    sendBtn.addEventListener('click', handleSend);
+    inputField.addEventListener('keypress', (e) => { if (e.key === 'Enter') handleSend(); });
+    micBtn.addEventListener('click', toggleMic);
+    keyInput.addEventListener('keypress', (e) => { if(e.key === 'Enter') saveKey(); });
+
+    // Start
+    init();
+
+    // Responsive Scroll Handle
+    window.addEventListener('resize', () => {
+        if (Math.abs(window.innerHeight - window.outerHeight) > 100) {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'instant' });
+        }
+    });
+</script>
+</body>
+</html>
