@@ -27,7 +27,7 @@ PALA AI, yapay zekayı Anadolu'nun sıcak ve samimi diliyle harmanlayan, yedi b�
 
 Bu projeyi yerel ortamınızda denemek isterseniz:
 
-1. Depoyu klonlayın: `git clone https://github.com/cihantrkn46/VITALIUM.git`
+1. Depoyu klonlayın: `git clone https://github.com/cihantrkn46/Pala46-Tr.git`
 2. PALA AI dosyasının bulunduğu dizine gidin.
 3. `index.html` dosyasını herhangi bir modern tarayıcıda açın.
 
