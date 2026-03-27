@@ -3,7 +3,7 @@
 
 PALA AI, yapay zekayı Anadolu'nun sıcak ve samimi diliyle harmanlayan, yedi bölgenin kültürüne hakim bir dijital asistan projesidir. Sadece bir chatbot değil; yeri geldiğinde nasihat eden, yeri geldiğinde fıkra anlatan, yeri geldiğinde ise ince "laf sokmalarıyla" gülümseten bir yol arkadaşıdır.
 
-🔗 **Pala ile Sohbet Et:** [https://cihantrkn46.github.io/VITALIUM/](https://cihantrkn46.github.io/VITALIUM/) *(Not: Bu link projenizin bulunduğu alt klasöre göre güncellenmelidir)*
+🔗 **Pala ile Sohbet Et:** [https://cihantrkn46.github.io/Pala46-Tr/) 
 
 ---
 
