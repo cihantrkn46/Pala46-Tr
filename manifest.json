@@ -1,0 +1,25 @@
+{
+    "name": "PALA AI — Anadolu Bilgesi",
+    "short_name": "PALA AI",
+    "description": "Yedi bölgeyi bilen Anadolu yapay zeka asistanı",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#FEF6E8",
+    "theme_color": "#1e3d58",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./pala-ai.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./pala-ai.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
